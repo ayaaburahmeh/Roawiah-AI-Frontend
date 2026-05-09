@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Spend<span>Wise</span> AI</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#analyze">Analyze</a></li>
+      <li><a href="#features">Features</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Think Before You <span>Buy</span></h1>
+      <p>
+        An AI-powered tool that helps detect emotional and impulsive purchases before spending.
+      </p>
+      <div class="hero-btns">
+        <a href="#analyze" class="btn-primary">Analyze Purchase</a>
+      </div>
+
+      <div class="bank-card">
+        <p>AI Spending Card</p>
+        <h3>SpendWise</h3>
+        <div class="card-number">**** **** **** 2049</div>
+        <div class="card-bottom">
+          <span>Smart Buyer</span>
+          <span>12/28</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-card" id="analyze">
+      <h2>Purchase Analysis</h2>
+      <p class="card-text">Enter product details required by the AI model.</p>
+
+      <form id="purchase-form">
+        <input type="text" name="product_name" placeholder="Product Name" required>
+        <input type="text" name="brand" placeholder="Brand or Unknown" required>
+
+        <select name="main_category" required>
+          <option value="">Select Category</option>
+          <option value="electronics">electronics</option>
+          <option value="furniture">furniture</option>
+          <option value="appliances">appliances</option>
+          <option value="auto">auto</option>
+          <option value="computers">computers</option>
+          <option value="construction">construction</option>
+          <option value="apparel">apparel</option>
+          <option value="accessories">accessories</option>
+          <option value="stationery">stationery</option>
+          <option value="kids">kids</option>
+          <option value="medicine">medicine</option>
+          <option value="sport">sport</option>
+          <option value="country_yard">country_yard</option>
+        </select>
+
+        <input type="number" name="hour" placeholder="Hour 0-23" min="0" max="23" required>
+
+        <select name="day_of_week" required>
+          <option value="">Select Day</option>
+          <option value="0">Monday</option>
+          <option value="1">Tuesday</option>
+          <option value="2">Wednesday</option>
+          <option value="3">Thursday</option>
+          <option value="4">Friday</option>
+          <option value="5">Saturday</option>
+          <option value="6">Sunday</option>
+        </select>
+
+        <button type="submit" class="btn-primary full-btn">Analyze Now</button>
+      </form>
+
+      <p id="loading">Loading... server may take 50–60 seconds.</p>
+      <div id="result"></div>
+    </div>
+    <div class="analysis-card" id="analyze">
+      <h2>Purchase Analysis</h2>
+      <p class="card-text">Enter product details required by the AI model.</p>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature-card">
+      <i class="ri-brain-line"></i>
+      <h3>AI Prediction</h3>
+      <p>Detects emotional purchase behavior.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="ri-time-line"></i>
+      <h3>Smart Timing</h3>
+      <p>Uses hour and day to understand buying context.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="ri-wallet-3-line"></i>
+      <h3>Better Spending</h3>
+      <p>Helps users pause before unnecessary purchases.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> SpendWise AI. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
