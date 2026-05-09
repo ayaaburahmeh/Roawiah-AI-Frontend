@@ -1,11 +1,12 @@
 // 1. إعدادات Firebase (اطلبي من فرح تجيبهم من الـ Firebase Console تبعها)
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCZLSJwvQyS8tNvstsw7_kUd2asFZPQlzI",
+  authDomain: "roawiah.firebaseapp.com",
+  projectId: "roawiah",
+  storageBucket: "roawiah.firebasestorage.app",
+  messagingSenderId: "889605467143",
+  appId: "1:889605467143:web:c9433d694ec274510e8ea2",
+  measurementId: "G-3F0MHS16QQ"
 };
 
 // تهيئة Firebase
